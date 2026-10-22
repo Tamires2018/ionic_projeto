@@ -1,0 +1,36 @@
+.naruto-toolbar {
+  --background: #ff6b1a;
+  --color: #ffffff;
+}
+
+.naruto-button {
+  --background: #ff6b1a;
+  --background-hover: #d94d00;
+  --background-activated: #d94d00;
+  --color: #ffffff;
+  --border-radius: 8px;
+
+  font-weight: 600;
+  height: 48px;
+}
+
+.form-container{
+    max-width: 480px;
+    margin: 0 auto;
+    padding-top: 16px ;
+}
+
+.form-card{
+    border-radius: 16px;
+    box-shadow: 0 4px 16px gray;
+}
+
+.feedback-msg{
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 4px 0;
+}
+
+ion-button{
+    height: 48px;
+}

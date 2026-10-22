@@ -1,2 +1,13 @@
-// For information on how to create your own theme, please refer to:
-// https://ionicframework.com/docs/theming/
+:root {
+  /* Usa o mesmo laranja da landing page em toda a aplicação. */
+  --ion-color-primary: #ff6b1a;
+  --ion-color-primary-rgb: 255, 107, 26;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #e05e17;
+  --ion-color-primary-tint: #ff7a31;
+
+  /* Altera a cor secundária global para ciano */
+  --ion-color-secondary: #06b6d4;
+  --ion-color-secondary-contrast: #ffffff;
+}

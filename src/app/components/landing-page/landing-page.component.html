@@ -1,0 +1,439 @@
+<ion-header [translucent]="true" class="site-header">
+
+  <ion-toolbar>
+
+    <div class="nav-container">
+
+      <a class="brand" href="#inicio">
+
+        <span class="brand-mark">忍</span>
+
+        <span>
+          NARUTO<span class="brand-dot">.</span>
+        </span>
+
+      </a>
+
+      <nav class="desktop-nav">
+
+        <a href="#inicio">Início</a>
+
+        <a href="#historia">História</a>
+
+        <a href="#personagens">Personagens</a>
+
+        <a href="#aldeia">Aldeia</a>
+
+      </nav>
+
+      <div class="nav-actions">
+
+        <ion-button
+          class="login-button"
+          fill="solid"
+          (click)="irParaLogin()">
+          Entrar
+        </ion-button>
+
+        <ion-button
+          class="register-button"
+          fill="outline"
+          (click)="irParaCadastro()">
+          Criar cadastro
+        </ion-button>
+
+      </div>
+
+    </div>
+
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content [fullscreen]="true" class="naruto-content">
+
+  <section id="inicio" class="hero-section">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-container">
+
+      <div class="hero-copy">
+
+        <span class="eyebrow">
+          O caminho do ninja começa aqui
+        </span>
+
+        <h1>
+          A VONTADE DO
+          <span>FOGO</span>
+        </h1>
+
+        <p>
+          Entre no universo de Naruto, conheça os grandes ninjas,
+          relembre batalhas marcantes e descubra o que torna cada
+          personagem único.
+        </p>
+
+        <div class="hero-actions">
+
+          <ion-button
+            class="primary-button"
+            (click)="irParaLogin()">
+
+            Entrar na jornada
+
+            <ion-icon
+              name="arrow-forward-outline"
+              slot="end">
+            </ion-icon>
+
+          </ion-button>
+
+          <ion-button
+            class="secondary-button"
+            fill="outline"
+            (click)="irParaCadastro()">
+
+            Criar cadastro
+
+          </ion-button>
+
+        </div>
+
+        <div class="hero-stats">
+
+          <div>
+            <strong>700+</strong>
+            <span>Episódios</span>
+          </div>
+
+          <div>
+            <strong>5</strong>
+            <span>Grandes vilas</span>
+          </div>
+
+          <div>
+            <strong>∞</strong>
+            <span>Momentos marcantes</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="hero-symbol">
+
+        <div class="chakra-ring ring-one"></div>
+
+        <div class="chakra-ring ring-two"></div>
+
+        <div class="chakra-core">
+          火
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="scroll-hint">
+
+      <span></span>
+
+      Role para descobrir
+
+    </div>
+
+  </section>
+
+  <section id="historia" class="intro-section">
+
+    <div class="section-container intro-grid">
+
+      <div>
+
+        <span class="section-label">
+          01 / O universo
+        </span>
+
+        <h2>
+          Mais do que uma história.
+          <br>
+
+          <strong>Um caminho.</strong>
+        </h2>
+
+      </div>
+
+      <div class="intro-text">
+
+        <p>
+          Naruto acompanha a jornada de um jovem ninja que começa
+          buscando reconhecimento e termina entendendo o verdadeiro
+          significado de amizade, perseverança e liderança.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="personagens" class="characters-section">
+
+    <div class="section-container">
+
+      <div class="section-heading">
+
+        <div>
+
+          <span class="section-label">
+            02 / Shinobi
+          </span>
+
+          <h2>
+            Personagens que
+            <strong>marcaram uma geração</strong>
+          </h2>
+
+        </div>
+
+        <p>
+          Alguns dos nomes que fizeram parte da jornada de Naruto.
+        </p>
+
+      </div>
+
+      <div class="character-grid">
+
+        <article class="character-card orange">
+
+          <div class="card-number">
+            01
+          </div>
+
+          <img
+            class="character-image"
+            src="assets/personagens/naruto.png"
+            alt="Naruto Uzumaki">
+
+          <div class="character-symbol">
+            う
+          </div>
+
+          <div class="character-info">
+
+            <span>
+              Uzumaki
+            </span>
+
+            <h3>
+              Naruto
+            </h3>
+
+            <p>
+              O ninja que nunca desistiu do seu sonho.
+            </p>
+
+          </div>
+
+        </article>
+
+        <article class="character-card blue">
+
+          <div class="card-number">
+            02
+          </div>
+
+          <img
+            class="character-image"
+            src="assets/personagens/sasuke.png"
+            alt="Sasuke Uchiha">
+
+          <div class="character-symbol">
+            写
+          </div>
+
+          <div class="character-info">
+
+            <span>
+              Uchiha
+            </span>
+
+            <h3>
+              Sasuke
+            </h3>
+
+            <p>
+              Um prodígio movido por força e propósito.
+            </p>
+
+          </div>
+
+        </article>
+
+        <article class="character-card pink">
+
+          <div class="card-number">
+            03
+          </div>
+
+          <img
+            class="character-image"
+            src="assets/personagens/sakura.png"
+            alt="Sakura Haruno">
+
+          <div class="character-symbol">
+            桜
+          </div>
+
+          <div class="character-info">
+
+            <span>
+              Haruno
+            </span>
+
+            <h3>
+              Sakura
+            </h3>
+
+            <p>
+              Determinação, evolução e força interior.
+            </p>
+
+          </div>
+
+        </article>
+
+        <article class="character-card dark">
+
+          <div class="card-number">
+            04
+          </div>
+
+          <img
+            class="character-image"
+            src="assets/personagens/kakashi.png"
+            alt="Kakashi Hatake">
+
+          <div class="character-symbol">
+            忍
+          </div>
+
+          <div class="character-info">
+
+            <span>
+              Hatake
+            </span>
+
+            <h3>
+              Kakashi
+            </h3>
+
+            <p>
+              Um sensei marcado por experiência e lealdade.
+            </p>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="aldeia" class="village-section">
+
+    <div class="section-container village-content">
+
+      <div class="village-badge">
+        木ノ葉
+      </div>
+
+      <div>
+
+        <span class="section-label light">
+          03 / Vila Oculta
+        </span>
+
+        <h2>
+          Onde a
+          <strong>Vontade do Fogo</strong>
+          vive.
+        </h2>
+
+        <p>
+          Konoha representa muito mais do que um lugar.
+          É o símbolo de uma geração que aprendeu a proteger
+          seus laços e passar seus sonhos adiante.
+        </p>
+
+        <ion-button
+          class="light-button"
+          fill="outline"
+          (click)="mostrarMensagem()">
+
+          Descobrir Konoha
+
+          <ion-icon
+            name="chevron-forward-outline"
+            slot="end">
+          </ion-icon>
+
+        </ion-button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="quote-section">
+
+    <div class="quote-mark">
+      “
+    </div>
+
+    <blockquote>
+      A verdadeira força de um ninja está em nunca abandonar
+      aquilo em que acredita.
+    </blockquote>
+
+    <span>
+      — Vontade do Fogo
+    </span>
+
+  </section>
+
+  <footer class="site-footer">
+
+    <div class="section-container footer-content">
+
+      <div class="brand footer-brand">
+
+        <span class="brand-mark">
+          忍
+        </span>
+
+        <span>
+          NARUTO<span class="brand-dot">.</span>
+        </span>
+
+      </div>
+
+      <p>
+        Projeto acadêmico / experimental desenvolvido
+        com Angular + Ionic.
+      </p>
+
+      <span class="footer-copy">
+        © 2026 • Feito por um fã
+      </span>
+
+    </div>
+
+  </footer>
+
+</ion-content>
